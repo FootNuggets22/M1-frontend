@@ -1,0 +1,125 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #000435;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 32px; /* adjust to fit your design */
+  width: auto;
+}
+
+.navbarLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.companyName {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.navbarRight {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbarMenu {
+  display: flex;
+  gap: 24px;
+}
+
+.navbarMenu a {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbarMenu a:hover {
+  color: gray;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin-right: 1rem;
+
+  /* Desktop-specific layout */
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.button{
+  background-color: #000435;
+}
+.loginButton {
+  font-size: 14px;
+  padding: 4px 12px;
+  border: 1px solid #aaa;
+  background-color: #000435;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.loginButton:hover {
+  background-color: gray;
+}
+
+.hamburger {
+  display: none; /* hidden by default */
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navLinks {
+    position: absolute;
+    top: 43px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    flex-direction: column;
+    background-color: #000030;
+    width: 100%;
+    display: none;
+    padding: 1rem 2rem;
+    align-items: center;
+    text-align: center;
+    
+  }
+
+  .navLinks.open {
+    display: flex;
+  }
+}
