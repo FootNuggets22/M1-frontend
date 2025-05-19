@@ -3,7 +3,7 @@ import "./ComponentStyles.css";
 
 function ImageUpload({ onChange, onUpload }) {
   return (
-    // Form element handles the submission of the selected image
+    // Form handles the submission of the selected image
     <form onSubmit={onUpload} className="upload-form">
       
       {/* Custom styled file input */}

@@ -6,34 +6,30 @@ import PredictionResult from './PredictionResult.jsx';
 import Navbar from '../frontendcomponents/Navbar.jsx';
 
 function Uploaded() {
-  // Store the uploaded image file (raw file data)
+  // Stores the uploaded image file (raw file data)
   const [image, setImage] = useState(null);
 
-  // Store the preview URL for displaying the image in the browser
+  // Stores the preview URL for displaying the image in the browser
   const [preview, setPreview] = useState(null);
 
-  // Store the result returned from the prediction API
+  // Stores the result returned from the prediction API
   const [result, setResult] = useState('');
 
-  /**
-   * Handles the image input change event
-   * Triggers when the user selects a file
-   */
+  
+   //Handles the image input change event
+   //Triggers when the user selects a file
   const handleImageChange = (e) => {
     const file = e.target.files[0]; // Get the first file from the input
-    setImage(file); // Save the file to state for upload
+    setImage(file); // Saves the file to state for upload
     setPreview(URL.createObjectURL(file)); // Create a temporary URL for preview
     setResult(''); // Clear any previous prediction result
   };
 
-  /**
-   * Handles the image upload to the server
-   * Sends the file to a backend endpoint and receives prediction data
-   */
+   //Handles the image upload to the server and sends the file to a backend endpoint and receives prediction data
   const handleUpload = async (e) => {
     e.preventDefault(); // Prevent default form submission behavior
 
-    // Guard clause: if no image is selected, do nothing
+    // If no image is selected, do nothing
     if (!image) return;
 
     // Create a FormData object to send image as multipart/form-data
@@ -72,8 +68,6 @@ function Uploaded() {
   return (
     <div className="app">
       <Navbar />
-
-      {/* Central container for the upload UI */}
       <div className="centered-tan-box">
         <h1>Car Type Classifier</h1>
 
