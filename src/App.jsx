@@ -3,6 +3,8 @@ import './App.css';
 import Navbar from './frontendcomponents/Navbar.jsx';
 import Uploaded from './components/Uploaded.jsx';
 import Content from './frontendcomponents/Content.jsx'
+import Footer from './frontendcomponents/Footer.jsx'
+
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
       <Navbar />
       <Content />
       <Uploaded />
+      <Footer />
     </div>
   );
 }
