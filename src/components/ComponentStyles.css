@@ -16,3 +16,16 @@
   font-weight: bold;
   font-size: 1.2rem;
 }
+
+.custom-file-upload {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.custom-file-upload input[type="file"] {
+  display: none;
+}

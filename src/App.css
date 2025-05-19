@@ -1,8 +1,27 @@
 .app {
-  font-family: Arial, sans-serif;
-  padding: 2rem;
-  max-width: 600px;
-  margin: auto;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: lightblue;
 }
+
+.centered-tan-box {
+  background-color:deepskyblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Reduce internal space */
+  margin: 40px auto;
+  width: 100%;
+  max-width: 800px;
+  height:450px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+
+  /* ❌ Remove min-height if present */
+  /* min-height: calc(100vh - 60px); */
+}
+
+
 
