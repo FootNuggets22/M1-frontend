@@ -1,12 +1,34 @@
-# React + Vite
+# Car Type Classifier – React Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This React application is a car type classification web app. It allows users to upload an image of a car, preview it, and send it to a backend service for prediction. The result is then displayed to the user.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Image Upload:** Upload car images from your local device.
+- **Live Preview:** Displays the selected image before upload.
+- **Prediction Request:** Sends the image to a backend API for classification.
+- **Result Display:** Shows the predicted car type and confidence score.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+/src
+├── frontendcomponents/
+│ └── Navbar.jsx
+├── Uploaded.jsx ← Main component
+├── ImageUpload.jsx
+├── ImagePreview.jsx
+└── PredictionResult.jsx
+
+---
+
+## Dependencies
+
+- React
+- JavaScript ES6+
+- A backend prediction server (e.g., built with Express, Flask, etc.)
+
+ ## Example of output
+
+ Prediction: Sedan (87.43%)
+
